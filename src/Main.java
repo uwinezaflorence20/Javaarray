@@ -13,13 +13,17 @@ public class Main {
  System.out.println("The student grades are: ");
  manager.printGrade(grades);
 
+ System.out.println("\nThe Sorted grade in descending order are: ");
+ manager.sortDescendingGrade(grades);
+
+
  System.out.println("\nThe Sorted grade in ascending order are: ");
  manager.sortGrade(grades);
 
  System.out.println("\nThe Search the student marks : ");
  manager.searchStudentGrade(grades,76);
 
-        System.out.println("\n📍 Grade at index 0: " + manager.getGradeIndex(grades, 0));
+ System.out.println("\n📍 Grade at index 0: " + manager.getGradeIndex(grades, 0));
 
 
 

@@ -16,6 +16,22 @@ class GradeManager {
         System.out.println("The sorted grades are: " + Arrays.toString(grades));
     }
 
+    public void sortDescendingGrade(int[] grades) {
+        // Sort in ascending order first
+        Arrays.sort(grades);
+
+        // Reverse the array to get descending order
+        for (int i = 0; i < grades.length / 2; i++) {
+            int temp = grades[i];
+            grades[i] = grades[grades.length - 1 - i];
+            grades[grades.length - 1 - i] = temp;
+        }
+
+        // Print the sorted array
+        System.out.println("The sorted grades are: " + Arrays.toString(grades));
+    }
+
+
     // Method to search for a grade
     public int searchStudentGrade(int[] grades, int enteredGrade) {
         for (int i = 0; i < grades.length; i++) {
