@@ -5,12 +5,12 @@ public class Exampleofmap {
 
     public static void main(String[] args) {
         // declaration
-        Map<String,Integer> studentGrades;
-        Map<Integer,String> EmployeesName;
+        Map<String,Integer> studentGrades = new HashMap<>();
+        Map<Integer,String> EmployeesName = new TreeMap<>();
 
         //initialization
-        studentGrades = new HashMap<>();
-        EmployeesName = new TreeMap<>();
+//        studentGrades = new HashMap<>();
+//        EmployeesName = new TreeMap<>();
 
 studentGrades.put("Milla",100);
 studentGrades.put("Florence",80);

@@ -1,30 +1,31 @@
+import java.io.*;
 import java.util.Arrays;
+import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
- GradeManager manager = new GradeManager();
- int[] grades = {88, 74, 92, 67, 85,
-                90, 78, 81, 69, 95,
-                76, 83, 70, 89, 93,
-                65, 80, 77, 68, 87};
-
- System.out.println("The student grades are: ");
- manager.printGrade(grades);
-
- System.out.println("\nThe Sorted grade in descending order are: ");
- manager.sortDescendingGrade(grades);
 
 
- System.out.println("\nThe Sorted grade in ascending order are: ");
- manager.sortGrade(grades);
+        Scanner in = new Scanner(System.in);
 
- System.out.println("\nThe Search the student marks : ");
- manager.searchStudentGrade(grades,76);
+        String fileLocation = "C:\\Users\\user\\OneDrive\\Desktop\\WriteNameToFile\\src\\Myname.txt";
+        String name = " 1. Uwineza Florence \n Student at university of Rwanda \n Year 3 Computer science";
 
- System.out.println("\n📍 Grade at index 0: " + manager.getGradeIndex(grades, 0));
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileLocation))) {
+            writer.write(name);
+            System.out.println("Name written to file successfully!");
+        } catch (IOException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
 
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileLocation))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException ex) {
+            System.out.println("Error in reading file! " + ex.getMessage());
+        }
 
 
 
