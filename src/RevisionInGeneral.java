@@ -69,5 +69,10 @@ System.out.println(saerch);
                 }
             }
         }
+
+
+        //exricise 1
+
+
     }
 }

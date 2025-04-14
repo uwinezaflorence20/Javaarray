@@ -27,63 +27,6 @@ public class Main {
             System.out.println("Error in reading file! " + ex.getMessage());
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         int[] studentGrade = {100,59,56,43,67,43,20,56};
         int sum = 0;
         int avg = 0;
@@ -124,5 +67,19 @@ public class Main {
         Arrays.sort(age, (a, b) -> b - a); // or: Comparator.reverseOrder()
 
         System.out.println("The sorted array in descending order: " + Arrays.toString(age));
+
+
+
+
+        //answer to question1
+        Grade marks = new Grade();
+        Integer[] grade1 = {10, 20, 30, 40, 50};
+        int[] grades = {10, 20, 30, 40, 50};
+
+        marks.PrintGrade(grades);
+          // will return index 1
+        marks.SearchNumber(grades, 30);
+        marks.Sort(grades);
+        marks.SortAscending(grade1);
     }
 }
