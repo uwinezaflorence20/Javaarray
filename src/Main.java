@@ -138,8 +138,11 @@ public class Main {
 
         //example  practive numer 3
 
-        Employee employee = new Employee("John Smith",100,2000);
-        System.out.println("The name for the employee is " +employee.name+ " the employee Id is " +employee.employeeId+ " And the salary is " +employee.salary);
+        Employee employee = new Employee("John Smith",
+                100,2000);
+        System.out.println("The name for the employee " +
+                "is " +employee.name+ " the employee Id is " +employee.employeeId+ " And the salary is "
+                +employee.salary);
         employee.calculatePay();
 
         FullTimeEmployee full = new FullTimeEmployee("Florence",2,100000,"nothing just salary");
@@ -149,6 +152,22 @@ public class Main {
         PartTimeEmployee part = new PartTimeEmployee("milli",3,20000,4.5,2);
         System.out.println("The name for the employee is " +part.name+ " the employee Id is " +part.employeeId+ " And the salary is " +part.salary+ "The hour rate is " +part.hourlyRate+ "and The hours she worked is " +part.hoursWorkedPerWeek);
         System.out.println("The salary of the Part Time Employee is "+part.calculatePay());
+
+
+
+        //Polymorphism practice 1
+
+        NumberOperation number = new NumberOperation();
+        System.out.println("The product of two numbers: "+number.multiply(10,10));
+        System.out.println("The product of three numbers: "+number.multiply(10,10,20));
+        System.out.println("The product of two Double  numbers: "+number.multiply(10.2,10.4));
+
+
+
+
+        //Polymorphism practice 1
+
+        //Polymorphism practice 1
 
 
 
