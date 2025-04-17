@@ -1,6 +1,9 @@
 import javax.xml.transform.Source;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.*;
+
+import java.io.*;
 
 public class Grade {
     int[] grades ;
@@ -32,7 +35,20 @@ public class Grade {
     public void SortAscending(Integer[] grades) {
         Arrays.sort(grades,Collections.reverseOrder());
         System.out.println(Arrays.toString(grades));
-    }
-    }
+
+
+
+                Map<String , Integer> elements = new HashMap<>();
+
+                elements.put("A",1);
+
+                elements.put("B",2);
+
+                System.out.println(elements.get("A"));
+
+            }
+
+        }
+
 
 

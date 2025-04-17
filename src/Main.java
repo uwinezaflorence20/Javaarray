@@ -1,6 +1,9 @@
 import java.io.*;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,16 +30,14 @@ public class Main {
             System.out.println("Error in reading file! " + ex.getMessage());
         }
 
-        int[] studentGrade = {100,59,56,43,67,43,20,56};
+        int[] studentGrade = {100, 59, 56, 43, 67, 43, 20, 56};
         int sum = 0;
         int avg = 0;
         try {
             System.out.println(studentGrade[5]);
-        }
-        catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println( "ArrayIndexOutOfBoundsException" +e);
-        }
-        finally {
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException" + e);
+        } finally {
             System.out.println("Finally this indices is not in the array");
         }
         //highest and the lowest
@@ -54,21 +55,19 @@ public class Main {
         // displaying the marks of the student
         for (int i = 0; i < studentGrade.length; i++) {
             System.out.println(studentGrade[i]);
-        sum += studentGrade[i];
-        avg = sum / studentGrade.length;
+            sum += studentGrade[i];
+            avg = sum / studentGrade.length;
 
-            }
-        System.out.println( "The summation of the student marks is:" +sum);
-        System.out.println( "The Average of the student marks is:" +avg);
+        }
+        System.out.println("The summation of the student marks is:" + sum);
+        System.out.println("The Average of the student marks is:" + avg);
         Arrays.sort(studentGrade);
-        System.out.println( "The sorted in Ascending order:" +Arrays.toString(studentGrade));
+        System.out.println("The sorted in Ascending order:" + Arrays.toString(studentGrade));
         Integer[] age = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
         Arrays.sort(age, (a, b) -> b - a); // or: Comparator.reverseOrder()
 
         System.out.println("The sorted array in descending order: " + Arrays.toString(age));
-
-
 
 
         //answer to question1
@@ -77,9 +76,62 @@ public class Main {
         int[] grades = {10, 20, 30, 40, 50};
 
         marks.PrintGrade(grades);
-          // will return index 1
+        // will return index 1
         marks.SearchNumber(grades, 30);
         marks.Sort(grades);
         marks.SortAscending(grade1);
+
+        Map<String, Integer> elements = new HashMap<>();
+
+        elements.put("A", 1);
+
+        elements.put("B", 2);
+
+        System.out.println(elements.get("A"));
+
+        int[] array1 = {5,10,15};
+
+        System.out.println(array1[1]);
+
+
+
+
+        SavingsAccount mySavings = new SavingsAccount(1000, 0.05);
+// Calls both constructors
+        mySavings.deposit(500);
+// Inherited from BankAccount
+        mySavings.applyInterest();
+// Specific to SavingsAccount
+        System.out.println("Current balance: " + mySavings.getBalance());
+
+
+        //Practice examples one
+
+        Shape shape = new Shape("Blue");
+        shape.draw();
+        System.out.println("the area of the shape is: " + shape.getArea());
+
+        Circle cr = new Circle("Red",20);
+        cr.draw();
+        System.out.println("the area of the circle is: " + cr.getArea());
+
+        Rectangle rectangle = new Rectangle("pink",4,5);
+        rectangle.draw();
+        System.out.println("the area of the rectangle is: " + rectangle.getArea());
+
+
+
+        // practice number 2
+
+
+
+
+
+
+
+
+
+
     }
-}
+
+    }

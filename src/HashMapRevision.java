@@ -4,6 +4,7 @@ import java.util.Map;
 public class HashMapRevision {
     public static void main(String[] args) {
         Map<Integer, String> grades = new HashMap<>();
+
         grades.put(1, "A");
         grades.put(2, "B");
         grades.put(3, "C");
@@ -14,9 +15,22 @@ public class HashMapRevision {
         grades.put(8, "H");
         grades.put(9, "I");
         grades.put(10, "J");
+
+        System.out.println( grades.get(1));
+
+        for (int i=0 ;i<grades.size();i++) {
+            System.out.println("---------------------------------------------------------------");
+            System.out.println(grades.get(i));
+        }
         for (Integer key1 : grades.keySet()) {
             System.out.println(grades.get(key1));
         }
+
+
+
+
+
+
 
 
 
