@@ -163,16 +163,26 @@ public class Main {
         System.out.println("The product of two Double  numbers: "+number.multiply(10.2,10.4));
 
 
+        Shapetwo[] shapes = new Shapetwo[3];
+        //Polymorphism practice 2
+        shapes[0] = new Circletwo("Red", 10);
+        shapes[1] = new Rectangletwo("Blue", 5, 7);
+        shapes[2] = new triangle("Green", 6, 4);
+
+
+        for(Shapetwo s : shapes) {
+            s.draw();
+            System.out.println("Area of the shape is: " + s.getAreatwo());
+            System.out.println("----------------------------------------------------------------------");
+        }
+    }
+}
 
 
         //Polymorphism practice 1
 
-        //Polymorphism practice 1
 
 
 
 
 
-    }
-
-    }
