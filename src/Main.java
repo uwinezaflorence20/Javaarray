@@ -123,9 +123,17 @@ public class Main {
 
         // practice number 2
 
+        Vehicle vehicle = new Vehicle("Black",40);
+        System.out.println("the vehicle color  is " +vehicle.color+ " And the speed is "+ vehicle.speed);
+        vehicle.start();
 
+        Motorcycle motorcycle = new Motorcycle("white",50,true);
+        System.out.println("the vehicle color  is " +motorcycle.color+ " And the speed is "+ motorcycle.speed + " And has side car is "+ motorcycle.hasSidecar);
+        motorcycle.start();
 
-
+        Truck truck = new Truck("red",100,1000);
+        System.out.println("the vehicle color  is " +truck.color+ " And the speed is "+ truck.speed + " And has side car is "+ truck.cargoCapacity);
+        truck.start();
 
 
 
