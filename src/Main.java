@@ -136,6 +136,20 @@ public class Main {
         truck.start();
 
 
+        //example  practive numer 3
+
+        Employee employee = new Employee("John Smith",100,2000);
+        System.out.println("The name for the employee is " +employee.name+ " the employee Id is " +employee.employeeId+ " And the salary is " +employee.salary);
+        employee.calculatePay();
+
+        FullTimeEmployee full = new FullTimeEmployee("Florence",2,100000,"nothing just salary");
+        System.out.println("The name for the employee is " +full.name+ " the employee Id is " +full.employeeId+ " And the salary is " +full.salary+ " And for the addition benefit is "+ full.banefitsPackage);
+        System.out.println("The salary of the Part Time Employee is "+full.calculatePay());
+
+        PartTimeEmployee part = new PartTimeEmployee("milli",3,20000,4.5,2);
+        System.out.println("The name for the employee is " +part.name+ " the employee Id is " +part.employeeId+ " And the salary is " +part.salary+ "The hour rate is " +part.hourlyRate+ "and The hours she worked is " +part.hoursWorkedPerWeek);
+        System.out.println("The salary of the Part Time Employee is "+part.calculatePay());
+
 
 
 
