@@ -175,11 +175,46 @@ public class Main {
             System.out.println("Area of the shape is: " + s.getAreatwo());
             System.out.println("----------------------------------------------------------------------");
         }
+
+
+        //INTERFACES
+
+        // Create a Circle object with radius 3
+        Circle2 circle = new Circle2(3);
+        circle.draw(); // Drawing a Circle
+        System.out.println("Area: " + circle.getArea()); // Circle Area
+
+        System.out.println(); // Just for better separation
+
+        // Create a Rectangle object with width 4 and height 5
+        Rectangle2 rectangle2 = new Rectangle2(4, 5);
+        rectangle2.draw(); // Drawing a Rectangle
+        System.out.println("Area: " + rectangle2.getArea()); // Rectangle Area
+
+        System.out.println(); // Just for better separation
+
+        // Create a Triangle object with base 6 and height 2
+        Triangle2 triangle = new Triangle2(6, 2);
+        triangle.draw(); // Drawing a Triangle
+        System.out.println("Area: " + triangle.getArea()); //
+
+System.out.println("--------------------------------------------------------------------------------");
+System.out.println();
+
+        //INTERFACE2
+
+        Bird bird = new Bird();
+        bird.fly();
+
+        Airplane airplane = new Airplane();
+        airplane.fly();
+
+        Kite kite = new Kite();
+        kite.fly();
     }
 }
 
 
-        //Polymorphism practice 1
 
 
 
