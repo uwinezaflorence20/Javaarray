@@ -211,6 +211,14 @@ System.out.println();
 
         Kite kite = new Kite();
         kite.fly();
+
+        //INTERFACE 3
+
+        FileLogger fileLogger = new FileLogger();
+        fileLogger.logMessage("This is a log message");
+
+        ConsoleLogger consoleLogger = new ConsoleLogger();
+        consoleLogger.logMessage("This is a console message");
     }
 }
 
