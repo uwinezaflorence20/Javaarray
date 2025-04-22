@@ -242,8 +242,8 @@ System.out.print("Attempting payment with PayPal: ");
         EmailNotification emailNotification = new EmailNotification();
         SMSNotification smsNotification = new SMSNotification();
 
-        emailNotification.sendNotification("This is an email message");
-        smsNotification.sendNotification("This is a sms message");
+        emailNotification.sendNotification(" This is a Email ! Your account has been updated.",NotificationPriority.HIGH);
+        smsNotification.sendNotification("This is a sms ! Meeting reminder in 30 minutes.",NotificationPriority.MEDIUM);
 
 
         }
