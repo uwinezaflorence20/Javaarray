@@ -246,7 +246,21 @@ System.out.print("Attempting payment with PayPal: ");
         smsNotification.sendNotification("This is a sms ! Meeting reminder in 30 minutes.",NotificationPriority.MEDIUM);
 
 
-        }
+        //bonus Marks
+
+        PushNotification pushNotification = new PushNotification("device123");
+
+        // Set default priority using overridden default method
+        pushNotification.setDefaultPriority("HIGH");
+
+        // Create a NotificationService reference and use it
+        NotificationService notificationService = pushNotification;
+
+        // Send a test message
+        notificationService.sendNotification("You've got a new update!", NotificationPriority.HIGH);
+
+
+    }
     }
 
 
