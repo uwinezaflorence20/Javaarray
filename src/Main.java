@@ -228,8 +228,9 @@ System.out.println();
         PaymentProcessor paymentProcessor = new PaymentProcessor();
         CreditCard creditCard = new CreditCard();
         PayPal payPal = new PayPal();
-
+System.out.print("Attempting payment with Credit Card: ");
         paymentProcessor.processPayment(creditCard);
+System.out.print("Attempting payment with PayPal: ");
         paymentProcessor.processPayment(payPal);
     }
 }
