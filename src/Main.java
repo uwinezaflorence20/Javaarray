@@ -232,8 +232,23 @@ System.out.print("Attempting payment with Credit Card: ");
         paymentProcessor.processPayment(creditCard);
 System.out.print("Attempting payment with PayPal: ");
         paymentProcessor.processPayment(payPal);
+
+        paymentProcessor.processPayment("creditcard", 100.0);
+
+
+
+        //Interface exercises for the class
+
+        EmailNotification emailNotification = new EmailNotification();
+        SMSNotification smsNotification = new SMSNotification();
+
+        emailNotification.sendNotification("This is an email message");
+        smsNotification.sendNotification("This is a sms message");
+
+
+        }
     }
-}
+
 
 
 

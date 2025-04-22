@@ -9,6 +9,19 @@ public class PaymentProcessor {
         System.out.println("Processing PayPal Payment");
 
     }
+
+    public void processPayment(String paymentMethodType, double amount) {
+           if ("creditcard".equalsIgnoreCase(paymentMethodType)) {
+                     processPayment(new CreditCard()); // Call the CreditCard version
+                     System.out.println("Amount: $" + amount);
+                 } else if ("paypal".equalsIgnoreCase(paymentMethodType)) {
+                     processPayment(new PayPal());     // Call the PayPal version
+                     System.out.println("Amount: $" + amount);
+                 } else {
+                     System.out.println("Unsupported payment method: " + paymentMethodType);
+                 }
+         }
+
 }
 
 
