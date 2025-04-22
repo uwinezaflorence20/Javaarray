@@ -219,6 +219,18 @@ System.out.println();
 
         ConsoleLogger consoleLogger = new ConsoleLogger();
         consoleLogger.logMessage("This is a console message");
+
+
+
+
+        // example of paypal and creditcards
+
+        PaymentProcessor paymentProcessor = new PaymentProcessor();
+        CreditCard creditCard = new CreditCard();
+        PayPal payPal = new PayPal();
+
+        paymentProcessor.processPayment(creditCard);
+        paymentProcessor.processPayment(payPal);
     }
 }
 

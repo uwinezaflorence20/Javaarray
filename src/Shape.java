@@ -2,6 +2,7 @@
     public String color;
 
     public Shape(String color) {
+
         this.color = color;
     }
 
@@ -23,7 +24,8 @@
 
      @Override
      public double getArea() {
-        return Math.PI * radius * radius;
+
+         return Math.PI * radius * radius;
     }
     @Override
      public void draw() {
