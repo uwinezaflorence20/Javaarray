@@ -260,6 +260,17 @@ System.out.print("Attempting payment with PayPal: ");
         notificationService.sendNotification("You've got a new update!", NotificationPriority.HIGH);
 
 
+
+        //ABSTRACT CLASS WORK
+
+
+   RectangleAbstract rectangleAbstract = new RectangleAbstract(10,1);
+   System.out.println(rectangleAbstract.calculateArea());
+
+   CircleAbstract circleAbstract = new CircleAbstract(20);
+   System.out.println(circleAbstract.calculateArea());
+
+
     }
     }
 
