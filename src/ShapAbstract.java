@@ -46,3 +46,22 @@ public CircleAbstract( int Radius) {
     }
 
 }
+
+class TriangleAbstract extends ShapAbstract {
+    int base;
+    int height;
+    public TriangleAbstract( int Base, int Height) {
+        this.base = Base;
+        this.height = Height;
+    }
+
+    public double calculatePerimeter() {
+        System.out.println("The Perimeter of Triangle using abstract is : ");
+        return base + height;
+    }
+    public double calculateArea() {
+        System.out.println("The Area of Triangle using abstract is : ");
+        return base * height;
+
+    }
+}

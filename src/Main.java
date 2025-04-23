@@ -276,6 +276,8 @@ System.out.print("Attempting payment with PayPal: ");
    System.out.println(shape1.calculateArea());
    ShapAbstract shape3 = new CircleAbstract(10);
    System.out.println(shape3.calculateArea());
+   ShapAbstract shape4 = new TriangleAbstract(10,20);
+   System.out.println(shape4.calculateArea());
 
 
 
@@ -285,6 +287,8 @@ System.out.print("Attempting payment with PayPal: ");
         System.out.println(perimeter1.calculatePerimeter());
         ShapAbstract perimeter2 = new CircleAbstract(10);
         System.out.println(perimeter2.calculatePerimeter());
+        ShapAbstract perimeter3 = new TriangleAbstract(20,10);
+        System.out.println(perimeter3.calculatePerimeter());
 
 
     }
