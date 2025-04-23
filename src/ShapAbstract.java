@@ -1,5 +1,6 @@
 public abstract class ShapAbstract {
       abstract double calculateArea();
+    public abstract double calculatePerimeter();
 }
 class RectangleAbstract extends ShapAbstract {
 
@@ -17,6 +18,12 @@ class RectangleAbstract extends ShapAbstract {
 
     }
 
+    @Override
+    public double calculatePerimeter() {
+        System.out.println("The Perimeter of Rectangle using abstract is : ");
+        return 2 * width * length;
+    }
+
 }
 
 
@@ -30,6 +37,12 @@ public CircleAbstract( int Radius) {
     double calculateArea() {
         System.out.println("The Area of Circle using abstract is : ");
      return radius * radius * Math.PI;
+    }
+
+    @Override
+    public double calculatePerimeter() {
+    System.out.println("The Perimeter of Circle using abstract is : ");
+    return 2 * radius * Math.PI;
     }
 
 }

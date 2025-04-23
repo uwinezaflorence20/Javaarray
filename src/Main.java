@@ -271,6 +271,22 @@ System.out.print("Attempting payment with PayPal: ");
    System.out.println(circleAbstract.calculateArea());
 
 
+//using polymorophism runtime
+   ShapAbstract shape1 = new RectangleAbstract(10,1);
+   System.out.println(shape1.calculateArea());
+   ShapAbstract shape3 = new CircleAbstract(10);
+   System.out.println(shape3.calculateArea());
+
+
+
+   //perimeter
+
+        ShapAbstract perimeter1 = new RectangleAbstract(10,1);
+        System.out.println(perimeter1.calculatePerimeter());
+        ShapAbstract perimeter2 = new CircleAbstract(10);
+        System.out.println(perimeter2.calculatePerimeter());
+
+
     }
     }
 
