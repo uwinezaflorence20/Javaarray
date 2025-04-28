@@ -291,6 +291,26 @@ System.out.print("Attempting payment with PayPal: ");
         System.out.println(perimeter3.calculatePerimeter());
 
 
+        // The Generics in java
+
+        Box<Integer> box1 = new Box<>();
+        box1.setValue(2);
+        Box<Double> box2 = new Box<>();
+        box2.setValue(2.5);
+
+        int getcontents = box1.getValue();
+        System.out.println(getcontents);
+
+
+//        Box<String> box2 = new Box<>();
+//        box2.setValue("Hello");
+
+//
+//        String getcontents2 = box2.getValue();
+//        System.out.println(getcontents2);
+
+
+
     }
     }
 

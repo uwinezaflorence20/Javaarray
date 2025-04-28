@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 public class ArrayListsRevision {
     public static void main(String[] args) {
-        //declaration of arryalists
+        //declaration of arraylists
         List<Integer> numbers= new ArrayList<>();
         ArrayList<Integer> numbers1 = new ArrayList<>();
 
@@ -29,15 +29,15 @@ public class ArrayListsRevision {
 
 
 
-//        //
-//        System.out.println(numbers.getLast());
-//        System.out.println(numbers.get(0));
-//        System.out.println(numbers.get(1));
-//        numbers.set(0,40);
-//        System.out.println(numbers);
-//        System.out.println(numbers.size());
-//        for( Integer number:numbers){
-//            System.out.println(number);
-//        }
+        //
+        System.out.println(numbers.getLast());
+        System.out.println(numbers.get(0));
+        System.out.println(numbers.get(1));
+        numbers.set(0,40);
+        System.out.println(numbers);
+        System.out.println(numbers.size());
+        for( Integer number:numbers){
+            System.out.println(number);
+        }
 }
 }
