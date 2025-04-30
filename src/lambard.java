@@ -28,5 +28,18 @@ public class lambard {
         System.out.println("arranged name of the students in ascending order:"+arrangedNamescharacter);
 
 
+        // .reduce(0 (a,b)-> a=b )
+                   //(0,1) ->0+1
+                   //1,(1,1) ->1+1
+        //2,(2,1) ->2+1
+        //3,(3,1) ->3+1
+
+        List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7);
+        int sum = numbers.stream()
+                .reduce(0,(a,b) -> a+b);
+        System.out.println("sum of the numbers:"+sum);
+
+
+
     }
 }
