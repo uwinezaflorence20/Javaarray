@@ -18,6 +18,9 @@ public class ArrayListsRevision {
         numbers.add(70);
         numbers.add(80);
         System.out.println(numbers);
+        //another easy way
+        System.out.println("easy way:");
+        numbers.forEach(System.out::println);
 
         System.out.println(numbers.get(5));
         numbers.set(0,40);
