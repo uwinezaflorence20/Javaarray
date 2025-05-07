@@ -22,7 +22,7 @@ class MyTask extends Thread {
         MyTask task1 = new MyTask("Task A");
         MyTask task2 = new MyTask("Task B");
 
-        task1.run();
-        task2.run();
+        task1.start();
+        task2.start();
     }
 }
